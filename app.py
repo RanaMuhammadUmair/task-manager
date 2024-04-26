@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, request
 from pymongo import MongoClient
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)  # enabling CORS for all domain.
 client = MongoClient("mongodb://localhost:27017/")
 db = client.task_manager
 tasks = db.tasks

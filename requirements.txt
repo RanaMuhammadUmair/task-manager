@@ -1,2 +1,3 @@
 pip install flask
 pip install pymongo
+pip install flask-cors  #A common issue when connecting a frontend running on one port to a backend on another is CORS (Cross-Origin Resource Sharing).
